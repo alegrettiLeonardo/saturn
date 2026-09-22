@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Native build outputs
+build/
+tmp/
+*.o
+*.mod
+*.a
+bin/shaftopt
+external/bin/
+external/**/bin/
+external/**/build/
+
+# Generated engineering results
+results/*
+!results/.gitkeep
+figures/
+tables/
+
+# OS / transfer metadata
+.DS_Store
+Thumbs.db
+*Zone.Identifier*
+
+# Local IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# SATURN generated logs/checkpoints
+*.log
+*.jsonl
