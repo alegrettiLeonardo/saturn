@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+scipy>=1.14
+pytest
+PyYAML>=6.0
+psutil>=5.9
+plotly>=5.0
