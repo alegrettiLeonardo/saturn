@@ -1,0 +1,28 @@
+schema_version = 2
+
+[case]
+id = "W60F_450_2000kW_2P_user_baseline"
+description = "Exact user-supplied native baseline decks; RollBear contains DE then NDE in one file."
+baseline_dir = "../../data/reference_inputs/baseline_2026-08-20"
+
+[inputs]
+rotordin = "INPUT_rotordin_0.txt"
+rollbear = "INPUT_rollbear_0_[0].txt"
+flextor = "INPUT_flextor_0.txt"
+keyway2 = "INPUT_keyway2_0.txt"
+
+[rollbear]
+# Authoritative mapping confirmed by the user on 2026-08-21.
+# The single native RollBear file contains two complete calculations in sequence.
+support_order = ["DE", "NDE"]
+
+[executables]
+rotordin = "../../external/bin/rotordin"
+rollbear = "../../external/bin/rollbear"
+flextor = "../../external/bin/flextor"
+keyway2 = "../../external/bin/keyway2"
+
+[metadata]
+phase = "0-1"
+input_policy = "copy_and_patch_authorized_fields_only"
+rollbear_mapping_source = "user_confirmed_DE_then_NDE_sequence_2026-08-21"
