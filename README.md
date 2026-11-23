@@ -36,3 +36,16 @@ Runtime execution expects the native tools referenced by the active case (RotorD
 ### Engineering traceability
 
 The GUI does not synthesize scientific results. Missing/not-yet-calculated responses are displayed as unavailable, while computed KPIs and plots are loaded from SATURN result artifacts. The supplied W60F baseline currently contains zero bearing damping; critical-speed/Campbell studies remain meaningful, but absolute resonance-response certification requires physically justified damping or a bounded uncertainty model.
+
+## Approved SATURN visual refresh — 2026-11-23
+
+The desktop shell has been aligned with the approved SATURN Project Setup, Optimization Results and Run Analysis references while preserving the existing scientific adapters and native solver ownership.
+
+HTML reference mockups are available at:
+
+- `mockups/index.html`
+- `mockups/project_setup.html`
+- `mockups/optimization_results.html`
+- `mockups/run_analysis.html`
+
+The implementation audit and engineering constraints are documented in `docs/SATURN_UI_SOLVER_AUDIT_20261123.md`.
