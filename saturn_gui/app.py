@@ -19,3 +19,7 @@ if not _PARTS:
 _payload = "".join(p.read_text(encoding="ascii").strip() for p in _PARTS)
 _source = gzip.decompress(base64.b64decode(_payload, validate=True)).decode("utf-8")
 exec(compile(_source, __file__, "exec"), globals(), globals())
+
+# Install the approved reference-derived artwork after loading the presentation.
+from .visual_assets import install as _install_visual_assets
+_install_visual_assets(SaturnApp)
